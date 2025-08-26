@@ -1,0 +1,11 @@
+sudo apt update
+
+sudo lshw -C network	您可以在输出中找到类似于“driver=xxxx”的行，其中“xxxx”是您的网卡所使用的驱动程序的名称。
+
+sudo rmmod r8169
+
+apt search 8168
+
+sudo apt-get install r8168-dkms
+
+reboot
